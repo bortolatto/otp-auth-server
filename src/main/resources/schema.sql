@@ -1,6 +1,6 @@
-drop table role;
-drop table user;
-drop table otp;
+drop table if exists role;
+drop table if exists user;
+drop table if exists otp;
 
 create table user
 (
