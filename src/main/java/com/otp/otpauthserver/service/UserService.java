@@ -79,8 +79,8 @@ public class UserService implements UserDetailsService {
             otp = new Otp();
             otp.setUsername(user.getUsername());
             otp.setCode(code);
-            otpRepository.save(otp);
         }
+        otpRepository.save(otp);
     }
 
     public boolean check(OtpDTO otpDTO) {
